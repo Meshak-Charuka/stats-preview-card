@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifB;
-    text-align: justify;
 }
 
 .contener-desktop {
@@ -63,7 +62,7 @@ body {
 
 .contener-mobile .stats h4.items {
     color: hsl(0, 0%, 100%);
-    margin: 10px;
+    margin: 20px;
 }
 
 .contener-mobile .stats h4.items span {
