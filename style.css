@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifB;
+    text-align: justify;
+}
+
+.contener-desktop {
+    display: none;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.contener-mobile {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(244, 37%, 16%);
+    width: 300px;
+    height: 93vh;
+    margin-top: 25px;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em
+}
+
+.contener-mobile .hero-image {
+    background: linear-gradient(rgba(170, 92, 219, 0.596), rgba(170, 92, 219, 0.596)),
+        url('images/image-header-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 40vh;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+}
+
+.contener-mobile h3.text-hero {
+    color: hsl(0, 0%, 100%);
+    margin: 15px;
+
+}
+
+.contener-mobile h3.text-hero span {
+    color: hsl(277, 64%, 61%);
+}
+
+.contener-mobile p.paragraph {
+    margin: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.contener-mobile .stats h4.items {
+    color: hsl(0, 0%, 100%);
+    margin: 10px;
+}
+
+.contener-mobile .stats h4.items span {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.contener-mobile .stats h4.items p.pid {
+    font-weight: 300;
+}
+
+/* tables */
+@media (min-width: 600px) {
+    body {
+        background-color: hsl(233, 47%, 7%);
+        height: 100vh;
+    }
+
+    .contener {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        text-align: center;
+        background-color: hsl(244, 37%, 16%);
+        width: 500px;
+        height: auto;
+        margin-top: 25px;
+        border-bottom-left-radius: 0.4em;
+        border-bottom-right-radius: 0.4em
+    }
+
+    .contener .hero-image {
+        background: linear-gradient(rgba(170, 92, 219, 0.596), rgba(170, 92, 219, 0.596)),
+            url('images/image-header-mobile.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 500px;
+        height: 40vh;
+        border-top-left-radius: 0.4em;
+        border-top-right-radius: 0.4em;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifB;
+    }
+
+    .contener-mobile {
+        display: none;
+    }
+
+    .contener-desktop {
+        display: flex;
+        justify-content: space-evenly;
+        width: 700px;
+        background-color: hsl(244, 37%, 16%);
+    }
+
+    .contener-desktop section.left {
+        width: 100%;
+    }
+
+    .contener-desktop section.left {
+        width: 450px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contener-desktop section.left header {
+        width: 60%;
+        height: 80%;
+        color: white;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contener-desktop section.left header h3 {
+        margin: 10px;
+    }
+
+    .contener-desktop section.left header h3 span {
+        color: hsl(277, 64%, 61%);
+    }
+
+    .contener-desktop section.left header .paragraph {
+        text-align: justify;
+        font-size: 13px;
+        margin: 10px;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .contener-desktop section.left .stats {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .contener-desktop section.left .stats h4 {
+        font-weight: 300;
+        color: hsla(0, 0%, 100%, 0.582);
+        ;
+    }
+
+    .contener-desktop section.left .stats span {
+        color: hsl(0, 0%, 100%);
+        font-weight: 800;
+    }
+
+
+    .contener-desktop .right .hero-image {
+        background: linear-gradient(rgba(170, 92, 219, 0.596), rgba(170, 92, 219, 0.596)),
+            url('images/image-header-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 300px;
+        height: 40vh;
+        border-top-right-radius: 0.4em;
+        border-bottom-right-radius: 0.4em;
+    }
+}
